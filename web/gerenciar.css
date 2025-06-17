@@ -1,0 +1,130 @@
+body {
+    font-family: 'Segoe UI', Arial, Helvetica, sans-serif;
+    background: #f6f6f6;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background: #0056b3;
+    color: #fff;
+    padding: 24px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.header-title {
+    font-size: 2rem;
+    font-weight: bold;
+    margin-left: 20px;
+}
+
+nav {
+    margin-right: 30px;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+    margin-left: 32px;
+    font-size: 1rem;
+    transition: text-decoration 0.2s;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+main {
+    margin: 32px 0 0 0;
+    padding: 0 0 0 16px;
+}
+
+h1 {
+    font-size: 1.5rem;
+    margin-bottom: 16px;
+    margin-top: 0;
+}
+
+.colunas {
+    display: flex;
+    gap: 24px;
+    margin-top: 8px;
+}
+
+.coluna {
+    flex: 1;
+    min-width: 300px;
+}
+
+.coluna h2 {
+    font-size: 1.2rem;
+    margin-bottom: 12px;
+}
+
+.card-tarefa {
+    background: #fff;
+    border: 1px solid #ececec;
+    border-radius: 14px;
+    padding: 22px 22px 18px 22px;
+    margin-bottom: 22px;
+    box-shadow: 0 2px 8px rgba(0,86,179,0.07);
+    font-size: 1.1rem;
+}
+
+.card-tarefa b {
+    font-weight: bold;
+}
+
+.botoes, .status-tarefa {
+    display: flex;
+    gap: 18px;
+    align-items: center;
+    margin: 18px 0 10px 0;
+}
+
+.card-tarefa button.editar,
+.card-tarefa button.excluir,
+.card-tarefa button.alterar-status {
+    background: #0056b3;
+    color: #fff;
+    border: none;
+    border-radius: 24px;
+    padding: 12px 28px;
+    font-size: 1.08rem;
+    font-weight: 600;
+    cursor: pointer;
+    box-shadow: 0 2px 6px rgba(0,86,179,0.08);
+    transition: background 0.2s, transform 0.1s;
+    outline: none;
+}
+
+.card-tarefa button.editar:hover,
+.card-tarefa button.excluir:hover,
+.card-tarefa button.alterar-status:hover {
+    background: #003d80;
+    transform: translateY(-2px) scale(1.04);
+}
+
+.card-tarefa select {
+    font-size: 1rem;
+    border-radius: 8px;
+    border: 1px solid #0056b3;
+    padding: 8px 16px;
+    background: #f6f6f6;
+    color: #0056b3;
+    font-weight: 600;
+}
+
+.footer-wireframe {
+    position: fixed;
+    bottom: 10px;
+    left: 0;
+    width: 100%;
+    text-align: center;
+    font-size: 1.5rem;
+    background: transparent;
+    color: #000;
+    pointer-events: none;
+}
